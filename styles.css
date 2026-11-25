@@ -121,3 +121,151 @@ footer {
         align-items: flex-start;
     }
 }
+/* Five car pictures side by side */
+.car-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.car-gallery div {
+    flex: 1;
+    min-width: 0;
+}
+
+.car-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Professional Vehicle Enquiry Page */
+
+.enquiry-main {
+    max-width: 750px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #f5f7fa;
+}
+
+.enquiry-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.enquiry-intro h2 {
+    color: #14365d;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.enquiry-intro p {
+    color: #555;
+    font-size: 16px;
+}
+
+.enquiry-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.enquiry-card h3 {
+    color: #14365d;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.form-description {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #222;
+}
+
+.form-group label span {
+    color: #d32f2f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 13px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #14365d;
+    outline: 2px solid #14365d;
+    outline-offset: 2px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.required-note {
+    color: #666;
+    font-size: 13px;
+}
+
+.enquiry-card button {
+    width: 100%;
+    padding: 14px;
+    background: #14365d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.enquiry-card button:hover {
+    background: #244f7d;
+}
+
+.response-note {
+    text-align: center;
+    color: #555;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .enquiry-main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .enquiry-card {
+        padding: 20px;
+    }
+
+    .enquiry-intro h2 {
+        font-size: 25px;
+    }
+}
