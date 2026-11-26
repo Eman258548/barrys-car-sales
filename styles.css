@@ -121,26 +121,34 @@ footer {
         align-items: flex-start;
     }
 }
-/* Five car pictures side by side */
+
+/* Vertical car pictures */
+
 .car-gallery {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
 .car-gallery div {
-    flex: 1;
+    width: 100%;
     min-width: 0;
 }
 
 .car-gallery img {
+    display: block;
     width: 100%;
-    height: 180px;
+    height: 350px;
     object-fit: cover;
+    object-position: center;
     border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .car-gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Professional Vehicle Enquiry Page */
@@ -268,4 +276,153 @@ footer {
     .enquiry-intro h2 {
         font-size: 25px;
     }
+}
+
+/* Audio reader inside the blue header */
+
+header {
+    position: relative;
+}
+
+.audio-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 190px;
+    padding: 10px;
+    background-color: #244f7d;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.audio-panel h2 {
+    font-size: 18px;
+}
+
+.audio-panel button {
+    display: inline-block;
+    width: 48%;
+    margin: 3px 0;
+    padding: 7px 3px;
+    font-size: 13px;
+}
+
+#audio-status {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Car picture slider */
+
+.car-slider {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.car-slider .car-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.car-slider .prev {
+    left: 10px;
+}
+
+.car-slider .next {
+    right: 10px;
+}
+
+.car-thumbnails {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.car-thumbnails img {
+    width: 20%;
+    height: 65px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.car-thumbnails img.active {
+    border-color: #244f7d;
+}
+
+.slide-count {
+    text-align: center;
+    font-size: 14px;
+}
+/* Full-size image viewer */
+.image-viewer {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-viewer[hidden] {
+    display: none;
+}
+
+.image-viewer img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* Arrows in expanded image viewer */
+.expanded-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#previous-expanded {
+    left: 20px;
+}
+
+#next-expanded {
+    right: 20px;
 }

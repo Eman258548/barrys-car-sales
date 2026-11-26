@@ -21,6 +21,25 @@
     <a href="enquiry.html">Enquiry</a>
 </nav>
 </header>
+<!-- Audio accessibility panel -->
+<div class="audio-panel" aria-label="Audio reading controls">
+
+    <button type="button" id="read-page">
+        🔊 Listen
+    </button>
+
+    <button type="button" id="stop-reading">
+        ⏹ Stop
+    </button>
+
+    <p id="audio-status" aria-live="polite">
+        Press Listen to hear this page.
+    </p>
+
+</div>
+</div>
+
+<main>
 
 <main>
     <section>
@@ -32,85 +51,196 @@
     <h2 id="cars">Cars currently available</h2>
 
     <div>
-        <div>
-            <img src="hatchback1.jpg" alt="2019 Hatchback picture 1">
-            <div>
-    <div>
-        <img src="hatchback2.jpg" alt="2019 Hatchback picture 2">
-    </div>
+        
+<div class="car-slider">
+    <button type="button" class="prev" aria-label="Previous picture">&#10094;</button>
 
-    <div>
-        <img src="hatchback3.jpg" alt="2019 Hatchback picture 3">
-    </div>
+    <img class="car-slide" src="hatchback1.jpg" alt="2019 Hatchback front view">
 
-    <div>
-        <img src="hatchback4.jpg" alt="2019 Hatchback picture 4">
-    </div>
+    <button type="button" class="next" aria-label="Next picture">&#10095;</button>
+</div>
+<p class="slide-count" aria-live="polite">Picture 1 of 5</p>
 
-    <div>
-        <img src="hatchback5.jpg" alt="2019 Hatchback picture 5">
-    </div>
+<div class="car-thumbnails">
+    <img src="hatchback1.jpg" alt="Show hatchback picture 1" class="active">
+    <img src="hatchback2.jpg" alt="Show hatchback picture 2">
+    <img src="hatchback3.jpg" alt="Show hatchback picture 3">
+    <img src="hatchback4.jpg" alt="Show hatchback picture 4">
+    <img src="hatchback5.jpg" alt="Show hatchback picture 5">
+</div>
 
-            <h3>2019 Hatch 1.0</h3>
-            <div>£8,495</div>
-            <p>42,000 miles · Petrol · Manual · 5 doors</p>
-            <a href="enquiry.html">Enquire about the 2019 Hatch 1.0</a>
+           
+<h3>2019 Hatch 1.0</h3>
+
+<p class="car-price">£8,495</p>
+
+<p>42,000 miles · Petrol · Manual · 4 doors</p>
+
+<p>
+    This stylish and practical hatchback is ideal for everyday journeys,
+    commuting and small family trips. Its compact design makes it easy
+    to drive around town, while the comfortable interior provides
+    space for passengers.
+</p>
+
+<h4>Vehicle Details</h4>
+
+<ul>
+    <li>Year: 2019</li>
+    <li>Engine: 1.0-litre petrol</li>
+    <li>Transmission: Manual</li>
+    <li>Doors: 4</li>
+    <li>Mileage: 42,000 miles</li>
+    <li>Fuel type: Petrol</li>
+    <li>Body type: Hatchback</li>
+</ul>
+
+<a href="enquiry.html">Enquire about the 2019 Hatch 1.0</a>
+
         </div>
+     <div class="car-slider">
+    <button type="button" class="prev" aria-label="Previous picture">&#10094;</button>
+
+    <img class="car-slide" src="trail img 1.jpg" alt="2019 Hatchback front view">
+
+    <button type="button" class="next" aria-label="Next picture">&#10095;</button>
+</div>
+<p class="slide-count" aria-live="polite">Picture 1 of 5</p>
+
+<div class="car-thumbnails">
+    <img src="trail img 1.jpg" alt="Show hatchback picture 1" class="active">
+    <img src="trail img 2.jpg" alt="Show hatchback picture 2">
+    <img src="trail img 3.jpg" alt="Show hatchback picture 3">
+    <img src="trail img 4.jpg" alt="Show hatchback picture 4">
+    <img src="trail img 5.jpg" alt="Show hatchback picture 5">
+</div>
+
 
         <div>
         
-            <h3>2020 Trail 1.5</h3>
-            <div>£12,950</div>
-            <p>31,500 miles · Petrol · Automatic · 5 doors</p>
-            <a href="enquiry.html">Enquire about the 2020 Trail 1.5</a>
+            
+<h3>2020 Nissan X-Trail S</h3>
+
+<p class="car-price">£12,950</p>
+
+<p>31,500 miles · Petrol · Automatic · 5 doors</p>
+
+<p>
+    The 2020 Nissan X-Trail is a spacious and practical family vehicle,
+    designed for comfortable everyday driving. Its automatic
+    transmission makes driving easier, while its roomy interior
+    provides plenty of space for passengers and luggage.
+    It is suitable for family trips, commuting and longer journeys.
+</p>
+
+<h4>Vehicle Details</h4>
+
+<ul>
+    <li>Year: 2020</li>
+    <li>Engine: 1.5-litre petrol</li>
+    <li>Transmission: Automatic</li>
+    <li>Doors: 5</li>
+    <li>Mileage: 31,500 miles</li>
+    <li>Fuel type: Petrol</li>
+    <li>Body type: SUV</li>
+</ul>
+
+<a href="enquiry.html">Enquire about the 2020 Trail 1.5</a>
+
         </div>
 
-        <div>
-            <img src="audi1.jpg" alt="A 2018 Audi S4 saloon car available for sale">
-            <div>
-        <img src="audi2.jpg" alt="2019 Hatchback picture 2">
-    </div>
+        <div class="car-slider">
+    <button type="button" class="prev" aria-label="Previous picture">&#10094;</button>
 
-    <div>
-        <img src="audi3.jpg" alt="2019 Hatchback picture 3">
-    </div>
+    <img class="car-slide" src="audi1.jpg" 1.jpg" alt="2019 Hatchback front view">
 
-    <div>
-        <img src="audi4.jpg" alt="2019 Hatchback picture 4">
-    </div>
+    <button type="button" class="next" aria-label="Next picture">&#10095;</button>
+</div>
+<p class="slide-count" aria-live="polite">Picture 1 of 5</p>
 
-    <div>
-        <img src="audi5.jpg" alt="2019 Hatchback picture 5">
-    </div>
-            <h3>2018 Audi S4</h3>
-            <div>£9,250</div>
-            <p>58,100 miles · Diesel · Manual · 4 doors</p>
-            <a href="enquiry.html">Enquire about the 2018 Audi S4</a>
+<div class="car-thumbnails">
+    <img src="audi1.jpg" alt="Show hatchback picture 1" class="active">
+    <img src="audi2.jpg" alt="Show hatchback picture 2">
+    <img src="audi3.jpg" 3.jpg" alt="Show hatchback picture 3">
+    <img src="audi4.jpg" alt="Show hatchback picture 4">
+    <img src="audi5.jpg" alt="Show hatchback picture 5">
+</div>
+           
+<h3>2018 Audi S4</h3>
+
+<p class="car-price">£9,250</p>
+
+<p>58,100 miles · Diesel · Manual · 4 doors</p>
+
+<p>
+    The 2018 Audi S4 is a stylish and comfortable saloon car
+    with a sporty appearance. It offers a spacious interior,
+    comfortable seating and a practical design. It is suitable
+    for daily commuting, business journeys and longer trips.
+</p>
+
+<h4>Vehicle Details</h4>
+
+<ul>
+    <li>Year: 2018</li>
+    <li>Make: Audi</li>
+    <li>Model: S4</li>
+    <li>Fuel type: Diesel</li>
+    <li>Transmission: Manual</li>
+    <li>Doors: 4</li>
+    <li>Mileage: 58,100 miles</li>
+    <li>Body type: Saloon</li>
+</ul>
+
+<a href="enquiry.html">Enquire about the 2018 Audi S4</a>
+
         </div>
+ <div class="car-slider">
+    <button type="button" class="prev" aria-label="Previous picture">&#10094;</button>
 
-        <div>
-            <img src="electic1.jpg" alt="White electric car connected to a charging point">
-            <div>
-        <div>
-             <img src="electric2.jpg" alt="2019 Hatchback picture 2">
-    </div>
+    <img class="car-slide" src="electic1.jpg" 1.jpg" alt="2019 Hatchback front view">
 
-    <div>
-        <img src="electric3.jpg" alt="2019 Hatchback picture 3">
-    </div>
+    <button type="button" class="next" aria-label="Next picture">&#10095;</button>
+</div>
+<p class="slide-count" aria-live="polite">Picture 1 of 5</p>
 
-    <div>
-        <img src="electric4.jpg" alt="2019 Hatchback picture 4">
-    </div>
+<div class="car-thumbnails">
+    <img src="electic1.jpg".jpg" alt="Show hatchback picture 1" class="active">
+    <img src="electric2.jpg" alt="Show hatchback picture 2">
+    <img src="electric3.jpg" 3.jpg" alt="Show hatchback picture 3">
+    <img src="electric4.jpg" alt="Show hatchback picture 4">
+    <img src="electric5.jpg" alt="Show hatchback picture 5">
+</div>
+           
+<h3>2021 Hyundai Kona</h3>
 
-    <div>
-        <img src="electric5.jpg" alt="2019 Hatchback picture 5">
-    </div>
-            <h3>2021 City-e</h3>
-            <div>£14,995</div>
-            <p>24,700 miles · Electric · Automatic · 5 doors</p>
-            <a href="enquiry.html">Enquire about the 2021 City-e</a>
-        </div>
+<p class="car-price">£10,395</p>
+
+<p>24,700 miles · Electric · Automatic · 5 doors</p>
+
+<p>
+    The 2021 Hyundai Kona is a modern and practical electric SUV,
+    ideal for everyday journeys and city driving. Its automatic
+    transmission provides a smooth driving experience, while its
+    spacious interior offers comfort for passengers. As an electric
+    vehicle, it produces no exhaust emissions while driving.
+</p>
+
+<h4>Vehicle Details</h4>
+
+<ul>
+    <li>Year: 2021</li>
+    <li>Make: Hyundai</li>
+    <li>Model: Kona</li>
+    <li>Fuel type: Electric</li>
+    <li>Transmission: Automatic</li>
+    <li>Doors: 5</li>
+    <li>Mileage: 24,700 miles</li>
+    <li>Body type: SUV</li>
+</ul>
+
+<a href="enquiry.html">Enquire about the 2021 Hyundai Kona</a>
+
     </div>
 
     <p>Stock changes regularly. Vehicle details are believed to be correct but should be confirmed before purchase.</p>
@@ -119,5 +249,26 @@
 <footer>
     Barry's Car Sales · 15 Chipmunk Close, Hatfield, Hertfordshire · 01707 111 222
 </footer>
+<!-- Full-size image viewer -->
+<div id="image-viewer" class="image-viewer" role="dialog"
+     aria-modal="true" aria-label="Expanded car pictures" hidden>
+
+    <button type="button" id="close-viewer"
+            class="close-viewer" aria-label="Close image">
+        &times;
+    </button>
+
+    <button type="button" id="previous-expanded"
+            class="expanded-arrow" aria-label="Previous picture">
+        &#10094;
+    </button>
+
+    <img id="expanded-image" src="" alt="Expanded car picture">
+
+    <button type="button" id="next-expanded"
+            class="expanded-arrow" aria-label="Next picture">
+        &#10095;
+    </button>
+</div>
 </body>
 </html>
