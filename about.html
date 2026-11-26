@@ -1,99 +1,185 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>About Barry's Car Sales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Barry's Car Sales</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
 <header>
-    <div>
+    <div class="header-content">
         <div>
             <h1>Barry's Car Sales</h1>
-            <div>Local quality used cars at sensible prices</div>
+            <p>Local quality used cars at sensible prices</p>
         </div>
         <div>Call 01707 111 222</div>
     </div>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="enquiry.html">Enquiry</a>
-</nav>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+
+    <div class="audio-panel" aria-label="Audio reading controls">
+        <button type="button" id="read-page">🔊 Listen</button>
+        <button type="button" id="stop-reading">⏹ Stop</button>
+        <p id="audio-status" aria-live="polite">
+            Press Listen to hear this page.
+        </p>
+    </div>
 </header>
-<!-- Audio accessibility panel -->
-<div class="audio-panel" aria-label="Audio reading controls">
 
-    <button type="button" id="read-page">
-        🔊 Listen
-    </button>
+<main class="about-page">
 
-    <button type="button" id="stop-reading">
-        ⏹ Stop
-    </button>
+    <section class="about-hero">
+        <p class="about-label">WELCOME TO BARRY'S CAR SALES</p>
+        <h2>More Than Just a Car Dealership</h2>
+        <p>
+            Helping drivers find the right car with honest advice,
+            quality vehicles and friendly local service.
+        </p>
+        <a href="index.html#cars" class="about-button">
+            Explore Our Cars
+        </a>
+    </section>
 
-    <p id="audio-status" aria-live="polite">
-        Press Listen to hear this page.
-    </p>
+    <section class="about-intro">
+        <h2>Who We Are</h2>
+        <p>
+            Barry's Car Sales began as a small family business in
+            Hatfield and has grown by focusing on straightforward
+            advice, carefully selected vehicles and local customer
+            service.
+        </p>
+        <p>
+            We aim to make buying a used car a simple and comfortable
+            experience. Our team is here to help customers explore
+            their options and find a vehicle that suits their needs.
+        </p>
+    </section>
 
-</div>
+    <section class="about-services">
+        <h2>What We Offer</h2>
+        <p class="section-description">
+            Helpful services to make your car-buying experience easier.
+        </p>
 
-<main>
-    <div>
-        <section>
-            <h2>About us</h2>
-            <p>Barry's Car Sales began as a small family business in Hatfield, and has grown by focusing on straightforward advice, carefully selected vehicles, and local customer service.</p>
+        <div class="service-cards">
+            <article class="service-card">
+                <h3>Quality Used Cars</h3>
+                <p>
+                    We offer a changing selection of used vehicles
+                    to suit different needs and budgets.
+                </p>
+            </article>
 
-            <h3>What we do</h3>
-            <p>Every car is inspected before sale. We can arrange test drives, part exchange and finance quotations. Customers are welcome to visit our showroom or contact us online before travelling.</p>
+            <article class="service-card">
+                <h3>Vehicle Inspections</h3>
+                <p>
+                    Every car is inspected before sale to help
+                    customers make informed decisions.
+                </p>
+            </article>
 
-            <h3>Our team</h3>
+            <article class="service-card">
+                <h3>Customer Support</h3>
+                <p>
+                    We can arrange test drives, part exchange
+                    and finance quotations.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="about-team">
+        <h2>Meet Our Team</h2>
+        <p class="section-description">
+            Our family team is here to help you throughout your
+            car-buying journey.
+        </p>
+
+        <div class="team-table">
             <table>
-                <tr>
-                   <th scope="col">Name</th>
-                   <th scope="col">Position</th>
-                   <th scope="col">Experience</th>
-                </tr>
-                <tr>
-                    <td><strong>Barry Doe</strong></td>
-                    <td>Sales Director</td>
-                    <td>20 years' motor trade experience</td>
-                </tr>
-                <tr>
-                    <td><strong>Chris Doe</strong></td>
-                    <td>Customer Adviser</td>
-                    <td>Sales and finance enquiries</td>
-                </tr>
-                <tr>
-                    <td><strong>Mac Doe</strong></td>
-                    <td>Vehicle Preparation</td>
-                    <td>Inspections and handovers</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Barry Doe</strong></td>
+                        <td>Sales Director</td>
+                        <td>20 years' motor trade experience</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chris Doe</strong></td>
+                        <td>Customer Adviser</td>
+                        <td>Sales and finance enquiries</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mac Doe</strong></td>
+                        <td>Vehicle Preparation</td>
+                        <td>Inspections and handovers</td>
+                    </tr>
+                </tbody>
             </table>
+        </div>
+    </section>
 
-            <p><a href="enquiry.html">Contact us about a vehicle</a> for more information.</p>
-        </section>
+    <section class="why-choose">
+        <h2>Why Choose Barry's Car Sales?</h2>
 
-        <aside>
-            <h3>Why customers choose us</h3>
-            <p>Friendly service</p>
-            <p>Clear pricing</p>
-            <p>Vehicle checks</p>
-            <p>Part exchange available</p>
-            <p>Local family business</p>
-        </aside>
-    </div>
+        <div class="choose-grid">
+            <div>Friendly customer service</div>
+            <div>Clear and sensible pricing</div>
+            <div>Vehicle checks before sale</div>
+            <div>Part exchange available</div>
+            <div>Local family business</div>
+        </div>
+    </section>
 
-    <div>
-       <strong>Opening times:</strong><br>
-        Mon-Fri 9:00-17:30<br>
-        Sat 9:00-16:00<br>
-        Sun CLOSED
-    </div>
+    <section class="opening-hours">
+        <h2>Visit Our Dealership</h2>
+        <p>We welcome customers to visit our showroom in Hatfield.</p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="row">Monday - Friday</th>
+                    <td>9:00 - 17:30</td>
+                </tr>
+                <tr>
+                    <th scope="row">Saturday</th>
+                    <td>9:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sunday</th>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            15 Chipmunk Close, Hatfield, Hertfordshire
+        </p>
+        <a href="enquiry.html" class="about-button">
+            Contact Our Team
+        </a>
+    </section>
+
 </main>
 
 <footer>
-    Barry's Car Sales · 15 Chipmunk Close, Hatfield, Hertfordshire · 01707 111 222
+    Barry's Car Sales · 15 Chipmunk Close, Hatfield,
+    Hertfordshire · 01707 111 222
 </footer>
+
 </body>
 </html>
